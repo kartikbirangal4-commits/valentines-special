@@ -1,7 +1,9 @@
 function goNext(){
   document.getElementById("page1").classList.add("hidden");
   document.getElementById("page2").classList.remove("hidden");
-  document.getElementById("bgm").play();
+
+  let music = document.getElementById("bgm");
+  if(music) music.play();
 }
 
 let text = "You make my world brighter every day 💖 I’m so lucky to have you.";
