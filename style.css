@@ -88,12 +88,13 @@ img {
 
 @keyframes floatUp {
   
+  to { transform: translateY(-120vh); }
+}
+
   .hero, .letter, .gifts {
   position: relative;
   z-index: 5;
 }
 
-  to { transform: translateY(-120vh); }
-}
 
 
