@@ -1,0 +1,32 @@
+body {
+  background: pink;
+  font-family: 'Arial';
+  text-align: center;
+}
+
+.page {
+  padding: 40px;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 20px;
+  background: red;
+  color: white;
+  border: none;
+}
+
+.gifts div {
+  display: inline-block;
+  padding: 30px;
+  margin: 20px;
+  background: white;
+  border-radius: 20px;
+  font-size: 22px;
+  cursor: pointer;
+}
