@@ -87,6 +87,13 @@ img {
 }
 
 @keyframes floatUp {
+  
+  .hero, .letter, .gifts {
+  position: relative;
+  z-index: 5;
+}
+
   to { transform: translateY(-120vh); }
 }
+
 
