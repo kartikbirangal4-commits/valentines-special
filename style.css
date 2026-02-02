@@ -1,44 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;600&display=swap');
+
 body {
-  background: linear-gradient(#ff9a9e, #fad0c4);
-  font-family: Arial;
+  margin: 0;
+  background: #ffd1dc;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(#ffd1dc, #ffb6c1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  overflow: hidden;
 }
 
-.page {
-  padding: 40px;
-  animation: fadeIn 1s ease;
-}
-
-.hidden {
-  display: none;
+.hero h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 48px;
+  color: #ff3366;
+  text-shadow: 0 0 15px white;
 }
 
 button {
-  padding: 15px 30px;
-  font-size: 22px;
-  border-radius: 25px;
-  background: hotpink;
-  color: white;
+  margin: 15px;
+  padding: 18px 40px;
+  border-radius: 30px;
   border: none;
+  font-size: 20px;
+  background: #ff6f91;
+  color: white;
+  box-shadow: 0 0 20px #ff6f91;
   cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 40px #ff6f91;
+}
+
+.gifts {
+  display: flex;
 }
 
 .gifts div {
-  display: inline-block;
+  background: #ffe6ec;
   padding: 40px;
-  margin: 20px;
-  background: white;
   border-radius: 25px;
+  margin: 20px;
+  box-shadow: 0 0 20px pink;
   font-size: 24px;
   cursor: pointer;
   transition: 0.3s;
-  box-shadow: 0 0 15px pink;
 }
 
 .gifts div:hover {
-  transform: scale(1.1) rotate(-2deg);
-  box-shadow: 0 0 30px hotpink;
+  transform: scale(1.15) rotate(-3deg);
+}
+
+.letter {
+  background: white;
+  padding: 30px;
+  border-radius: 30px;
+  box-shadow: 0 0 25px pink;
+  font-size: 22px;
+  color: #ff3366;
+  max-width: 500px;
 }
 
 img {
@@ -47,20 +76,14 @@ img {
   margin: 10px;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: scale(0.9); }
-  to { opacity: 1; transform: scale(1); }
-}
-
-body::before {
-  content: "💖 💕 💘 💝 💓 💗";
+/* Floating hearts */
+.heart {
   position: fixed;
-  font-size: 40px;
-  animation: floatHearts 10s linear infinite;
-  opacity: 0.4;
+  bottom: -50px;
+  animation: floatUp 8s linear infinite;
+  filter: drop-shadow(0 0 10px hotpink);
 }
 
-@keyframes floatHearts {
-  0% { top: 100%; }
-  100% { top: -10%; }
+@keyframes floatUp {
+  to { transform: translateY(-120vh); }
 }
