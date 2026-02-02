@@ -82,8 +82,11 @@ img {
   bottom: -50px;
   animation: floatUp 8s linear infinite;
   filter: drop-shadow(0 0 10px hotpink);
+  pointer-events: none;
+  z-index: 1;
 }
 
 @keyframes floatUp {
   to { transform: translateY(-120vh); }
 }
+
