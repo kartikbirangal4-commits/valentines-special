@@ -6,6 +6,8 @@
 </head>
 <body>
 
+<audio id="bgm" src="song.mp3" loop></audio>
+
 <div id="page1" class="page">
   <h1>Will you be my Valentine? 💘</h1>
   <button onclick="goNext()">Yes 💕</button>
@@ -13,17 +15,14 @@
 
 <div id="page2" class="page hidden">
   <h2>Choose your gift 🎁</h2>
+
   <div class="gifts">
     <div onclick="showLetter()">💌 Love Letter</div>
     <div onclick="showPhotos()">📸 Our Photos</div>
   </div>
 
   <div id="letter" class="hidden">
-    <p>
-      Dear My Valentine,<br>
-      You make my world brighter every day 💖  
-      I love you more than words can say.
-    </p>
+    <p id="loveText"></p>
   </div>
 
   <div id="photos" class="hidden">
