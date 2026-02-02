@@ -11,4 +11,5 @@ function createHeart() {
   setTimeout(()=>h.remove(), 10000);
 }
 
-setInterval(createHeart, 300);
+setInterval(createHeart, 800);
+
