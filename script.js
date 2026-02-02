@@ -1,29 +1,14 @@
-function goNext(){
-  document.getElementById("page1").classList.add("hidden");
-  document.getElementById("page2").classList.remove("hidden");
+function createHeart() {
+  const h = document.createElement("div");
+  h.className = "heart";
+  h.innerText = ["💖","💘","💝","💕"][Math.floor(Math.random()*4)];
 
-  let music = document.getElementById("bgm");
-  if(music) music.play();
+  h.style.left = Math.random() * 100 + "vw";
+  h.style.fontSize = (30 + Math.random()*60) + "px";
+  h.style.animationDuration = (5 + Math.random()*6) + "s";
+
+  document.body.appendChild(h);
+  setTimeout(()=>h.remove(), 10000);
 }
 
-let text = "You make my world brighter every day 💖 I’m so lucky to have you.";
-let i = 0;
-
-function showLetter(){
-  document.getElementById("letter").classList.remove("hidden");
-  document.getElementById("photos").classList.add("hidden");
-
-  i = 0;
-  document.getElementById("loveText").innerHTML = "";
-
-  let typing = setInterval(() => {
-    document.getElementById("loveText").innerHTML += text[i];
-    i++;
-    if(i >= text.length) clearInterval(typing);
-  }, 50);
-}
-
-function showPhotos(){
-  document.getElementById("photos").classList.remove("hidden");
-  document.getElementById("letter").classList.add("hidden");
-}
+setInterval(createHeart, 300);
