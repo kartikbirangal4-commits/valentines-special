@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Yay 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hero">
+  <h1>Yay, you said yes! 💕</h1>
+  <p>I made all these just for you</p>
+
+  <div class="gifts">
+    <div onclick="window.location.href='letter.html'">💌 Love Letter</div>
+    <div onclick="window.location.href='photos.html'">📸 Our Photos</div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Love Letter 💌</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hero">
+  <h1>Words from my heart 💖</h1>
+
+  <div class="letter">
+    To the love of my life,<br><br>
+    You make my world brighter every single day.  
+    I’m so lucky to have you as my Valentine.  
+    I love you more than words can ever say 💕  
+    <br><br>
+    Always yours 💖
+  </div>
+
+  <button onclick="window.location.href='gifts.html'">⬅ Back</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
