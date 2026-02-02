@@ -52,7 +52,6 @@ img {
   to { opacity: 1; transform: scale(1); }
 }
 
-/* Floating hearts */
 body::before {
   content: "💖 💕 💘 💝 💓 💗";
   position: fixed;
